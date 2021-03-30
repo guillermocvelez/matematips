@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sands-serif;
+  position: relative;
+  height: 100vh;
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.header .header-container {
+  min-width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-container figure {
+  min-width: 300px;
+}
+.header .header-container .header-search {
+  width: 30vw;
+}
+.header .header-container .header-search input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: #D5C7FE;
+  padding-left: 16px;
+  outline: none;
+  color: #4966B0;
+}
+.header .header-container .header-search input::placeholder {
+  color: #4966B0;
+}
+.header .header-container .header-nav {
+  /* width: 10%; */
+}
+.header .header-container .header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header .header-container .header-nav ul li {
+  margin-left: 16px;
+}
+.header .header-container .header-nav ul li a {
+  color: #4966B0;
+  transition: color 300ms ease-in-out;
+}
+.header .header-container .header-nav ul li:hover a {
+  color: #D5C7FE;
+}
+.header .header-container .toggler {
+  display: none;
+}
+
+.toggler-nav {
+  display: none;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .header-search {
+    width: 200px;
+  }
+  .header-search input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: #D5C7FE;
+    padding-left: 16px;
+    outline: none;
+    color: #4966B0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header .header-search {
+    display: none;
+  }
+  .header .header-nav {
+    display: none;
+  }
+  .header .header-container .toggler {
+    display: block;
+    font-size: 2rem;
+    color: #4966B0;
+    cursor: pointer;
+  }
+
+  .toggler-nav {
+    display: block;
+    background-color: #FFF7A5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100;
+    left: -100%;
+    display: flex;
+    justify-content: center;
+    transition: all 300ms ease-in-out;
+  }
+  .toggler-nav .toggler-aside-sublist {
+    margin-top: 64px;
+    padding: 0 32px;
+  }
+  .toggler-nav .toggler-aside-sublist .toggler-list_subitem {
+    margin-left: 16px;
+    color: #4966B0;
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+  .toggler-nav .toggler-aside-sublist .toggler-list_subitem a {
+    margin-left: 32px;
+    color: #4966B0;
+    font-size: 1rem;
+  }
+
+  .showNav {
+    left: 0;
+  }
+
+  .close-toggler {
+    display: block;
+    color: #4966B0;
+    font-size: 1.5rem;
+    margin-left: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    cursor: pointer;
+  }
+}
+.main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 32px 0;
+}
+.main .main-container {
+  width: 80%;
+  display: flex;
+}
+.main .main-container .aside {
+  width: 20%;
+}
+.main .main-container .aside .aside-list_item {
+  margin-bottom: 8px;
+}
+.main .main-container .aside .aside-list_item .aside-list_subitem-link {
+  font-size: 1.3rem;
+  color: #4966B0;
+}
+.main .main-container .aside .aside-list_item .subitem {
+  margin-left: 16px;
+}
+.main .app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .app figure img {
+  min-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+  }
+  .main .main-container {
+    width: 80%;
+    display: flex;
+  }
+  .main .main-container .aside {
+    width: 20%;
+  }
+  .main .main-container .aside .aside-list_item {
+    margin-bottom: 8px;
+  }
+  .main .main-container .aside .aside-list_item .aside-list_subitem-link {
+    font-size: 1rem;
+    color: #4966B0;
+  }
+  .main .main-container .aside .aside-list_item .subitem {
+    margin-left: 16px;
+  }
+  .main .app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .app figure img {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .aside {
+    display: none;
+  }
+}
+.footer {
+  width: 100vw;
+  background-color: #FCED4E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
