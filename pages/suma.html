@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style.css">
+    <title>Matematips</title>
+</head>
+<body>
+
+    <!-- HEADER  -->
+
+    <header class="header">
+        <div class="header-container">
+            <figure>
+                <a href="/"><img class="header-logo"  src="../assets//Logo.svg" alt=""></a>
+            </figure>
+            <form class="header-search" >
+                <input type="text" aria-placeholder="buscar" placeholder="Buscar">
+            </form>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="./pages/about.html">Acerca</a></li>
+                    <li><a href="/pages/contact.html">Contacto</a></li>
+                </ul>
+                
+            </nav>
+            <div class="toggler">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+        </div>
+    </header>
+
+    <nav class="toggler-nav">
+        <i class="close-toggler fas fa-window-close"></i>
+        <ul class="toggler-aside-sublist">
+            <li class="toggler-list_subitem">Operaciones con Matrices</li>
+            <li class="toggler-list_subitem"><a href="./pages/suma.html">Suma</a></li>
+            <li class="toggler-list_subitem"><a href="">Multiplicación</a></li>
+            <li class="toggler-list_subitem"><a href="">Inversa</a></li>
+        </ul>
+    </nav>
+
+    <!-- FINAL HEADER  -->
+    
+
+    <main class="main">
+        <!-- ASIDE MENU -->
+        <div class="main-container">
+            <aside class="aside">
+                <div class="aside-container">
+                    <ul class="aside-list">
+                        <li class="aside-list_item"><a class="aside-list_subitem-link" href="./pages/suma.html">Matrices</a>
+                        </li>
+                        <li class="aside-list_item"><a class="aside-list_subitem-link subitem" href="../pages/suma.html">Suma</a></li>
+                        <li class="aside-list_item"><a class="aside-list_subitem-link subitem" href="">Multiplicación</a></li>
+                        <li class="aside-list_item"><a class="aside-list_subitem-link subitem" href="">Inversa</a></li>
+                            
+                        
+                        
+
+                        <li class="aside-list_item"><a class="aside-list_subitem-link" href="/matrices">Ecuaciones </a>
+                        </li>
+                        <ul class="aside-sublist">
+                        </ul>
+                    </ul>
+                </div>
+            </aside>
+            <div class="app" id="app">
+                <!-- INSERTAR OPERACION -->
+
+                <div class="app-operation">
+                    <div class="app-operation__setup" >
+                        <div>
+                            <h2 class="app-operation__title">Suma de matrices</h2>
+                            <h3 class="app-operation__action">Entre el tamaño de las matrices:</h3> 
+                            <form class="matrix-inputs">
+                                <div class="tooltip"><i class="app-operation__info fas fa-info-circle"></i>
+                                    <p class="tooltiptext">Recuerda que para sumar dos matrices deber ser de igual tamaño, quiere decir, que las filas y columnas de la matriz 1 sean igual a las filas y las columnas de la matriz 2</p>
+                                </div>
+                    
+                                <label>i:</label>
+                                <input id="columns" class="matrix-input" type="number" for="i">
+                                <label>j:</label>
+                                <input id="files" class="matrix-input" type="number" for="j">
+                                <button type="submit" id="add-btn" class="app-operation__btn">Establecer</button>
+                            </form>
+                                           
+                        </div>
+                        <div>
+                            <img src="../assets/operationLogo.svg" >
+                        </div>                
+                    </div>
+                    <div class="app-operation__operation">
+                        <div class="app-operation__tip">
+                            <h3>RECUERDA!</h3>
+                            <p> Las letras 'i' y 'j' se refieren a las
+                            columnas y a las filas de la matriz
+                            </p>
+                        </div>
+                        
+    
+                    </div>
+
+
+
+                <!-- FIN INSERTAR OPERACIÓN -->
+
+
+
+
+            </div>
+        </div>
+        </main>
+        
+        
+
+    <!-- FOOTER  -->
+    <footer class="footer">
+        
+        <img src="../assets/logoFooter.svg" alt="">
+        
+    </footer>
+
+
+    <!-- <script type="module" src="./static/js/app.js"></script> -->
+    <script type="module" src="../script.js"></script>
+    <script type="module" src="../scripts/sumaMatrices.js"></script>
+</body>
+</html>

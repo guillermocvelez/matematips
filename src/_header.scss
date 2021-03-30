@@ -89,7 +89,7 @@
         .header-container{
             .toggler{
                 display: block;
-                font-size: 2rem;
+                font-size: 3rem;
                 color:$main-purple;
                 cursor: pointer;
             }
@@ -115,12 +115,12 @@
             .toggler-list_subitem{
                 margin-left: 16px;
                 color: $main-purple;
-                font-size: 1rem;
+                /* font-size: 24px; */
                 margin-bottom: 16px;
                 a {
                     margin-left: 32px;
                     color: $main-purple;
-                    font-size: 1rem;
+                    
                 }
             }
         }
