@@ -1,7 +1,31 @@
+.About{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: rgb(245, 245, 245);
+    padding: 32px 32px;
+    border-radius: 16px;
+    box-shadow: $shadow;
+    margin-top: 64px;
+}
 .about-logo img{
-    width:100px;
+    margin-right: 16px;
+    width:150px;
     margin-bottom: 16px;
 }
 .about-info p{
-    color:var(--main-purple);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    word-wrap: break-word;
+    color:$main-purple;
+    font-size: 20px;
+    text-align: center;
+}
+
+.about-info .app-operation__btn{
+    margin: 16px 0;
 }
